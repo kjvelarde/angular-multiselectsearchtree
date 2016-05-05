@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" ng-app="KJVelardeDemoApp">
+<head>
+    <meta charset="utf-8">
+    <title>KJVelarde Multi-select Search Tree List</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../dist/kjvelarde-multiselect-searchtree-0.8.0.min.css">
+
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="../dist/kjvelarde-multiselect-searchtree-0.8.0.min.js"></script>
+    <script type="text/javascript" src="../dist/kjvelarde-multiselect-searchtree-0.8.0.tpl.js"></script>
+</head>
+<body ng-controller="KJVelardeDemoCtrl">
+
+<header>
+    <h1 class="text-center">Multi-select Search Tree List</h1>
+</header>
+
+<div>
+    <div class="container">
+
+        <div class="row">
+            <h2></h2>
+
+             <div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <i class="glyphicon glyphicon-th-list"></i> Account Manager <a href="#" data-toggle="modal" data-target="#AccountManagerTreeModal"><i class="pull-right glyphicon glyphicon-plus" style="color:white;"></i></a>
+                    </div>
+					                    <multiselect-searchtree data-input-model="data" multi-select="true"
+                                            data-output-model="selectedItem2" data-callback="CustomCallback(item, selectedItems)"
+                                            data-select-only-leafs="true"></multiselect-searchtree>
+                </div>                
+            </div>
+			
+			<div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="glyphicon glyphicon-th-list"></i> Account Manager <a href="#" data-toggle="modal" data-target="#AccountManagerTreeModal"><i class="pull-right glyphicon glyphicon-plus"></i></a>
+                    </div>
+					                    <multiselect-searchtree data-input-model="data" multi-select="true"
+                                            data-output-model="selectedItem2" data-callback="CustomCallback(item, selectedItems)"
+                                            data-select-only-leafs="true"></multiselect-searchtree>
+                </div>                
+            </div>
+			
+			 <div class="col-lg-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <i class="glyphicon glyphicon-th-list"></i> Account Manager <a href="#" data-toggle="modal" data-target="#AccountManagerTreeModal"><i class="pull-right glyphicon glyphicon-plus" style="color:black;"></i></a>
+                    </div>
+					                    <multiselect-searchtree data-input-model="data" multi-select="true"
+                                            data-output-model="selectedItem2" data-callback="CustomCallback(item, selectedItems)"
+                                            data-select-only-leafs="true"></multiselect-searchtree>
+                </div>                
+            </div>
+
+
+            <div id="AccountManagerTreeModal" class="modal fade" role="dialog" v>
+                <div class="modal-dialog">                    
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">My Search Tree List</h4>
+                        </div>
+                        <div class="modal-body">
+                            <multiselect-searchtree data-input-model="data" multi-select="true"
+                                                    data-output-model="selectedItem2" data-callback="CustomCallback(item, selectedItems)"
+                                                    data-select-only-leafs="true"></multiselect-searchtree>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+			<hr style="color:red">
+			<div class="row">
+				<div class="col-xs-1">
+				<a href="http://portfoliokjvelarde.azurewebsites.net/"><img src="http://portfoliokjvelarde.azurewebsites.net/Content/images/logo.png" alt="http://portfoliokjvelarde.azurewebsites.net/" width="100px"></img></a>
+				</div>
+				<div class="col-xs-6">
+					<ul class="list-group">
+				<li class="list-group-item">		<a href="http://portfoliokjvelarde.azurewebsites.net/">http://portfoliokjvelarde.azurewebsites.net/</a></li>
+				<li class="list-group-item">		<a href="www.kjvelarde.com">www.kjvelarde.com</a></li>			
+				</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+			<h3>"Data-Output-Model" = ng-model</h3>
+			<div class="label label-primary">
+						{{selectedItem2}}
+			</div>
+
+			</div>
+
+					
+			</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
