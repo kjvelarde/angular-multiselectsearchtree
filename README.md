@@ -2,25 +2,29 @@ angular-multi-select-tree
 =============================
 
 A native Angular multi select tree. No JQuery.
-If you use this module you can give it a thumbs up at [http://ngmodules.org/modules/angular-multi-select-tree](http://ngmodules.org/modules/angular-multi-select-tree).
 
 #### Demo Page:
 
-[Demo] (http://htmlpreview.github.io/?)
+[Demo] (http://htmlpreview.github.io/?https://github.com/kjvelarde/angular-multiselectsearchtree/blob/master/demo/index.html)
 
 #### Features:
+Very Easy to Use: Plug and Play component
+Tree List
+Databind
+Filter by search textbox
+Checkbox
+Select one only 
+or Multiselect
+NO JQuery
 
+#### Design details: 
+Custom element using Angular Directive and Templating
 
-#### Implementation Details:
-
-
-#### Design details: Custom element using Angular Directive and Templating
-
-#### Callbacks: This is your onchange :)
+#### Callbacks: 
+This is your onchange :)
 
 ##### Usage:
-
-Get this i.
+Get this awesome component to your project by:
 
 ```sh
 bower install kjvelarde-angular-multiselectsearchtree --save
