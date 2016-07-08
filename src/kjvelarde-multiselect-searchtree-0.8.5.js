@@ -311,7 +311,12 @@
   mainModule.controller('treeItemCtrl', [
     '$scope',
     function ($scope) {
-      $scope.item.isExpanded = true;
+    
+      // Item is expanded by default
+      if ($scope.item.isExpanded !== false && $scope.item.isExpanded !== true) {
+        $scope.item.isExpanded = true;
+      }
+
       /**
      * Shows the expand option.
      *
