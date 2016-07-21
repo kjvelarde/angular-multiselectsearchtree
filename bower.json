@@ -1,7 +1,7 @@
 {
   "author": "Karl James Velarde",
   "name": "kjvelarde-angular-multiselectsearchtree",
-  "version": "0.8.5",
+  "version": "0.9.0",
   "description": "Amazing tree list component; bind ready with ability to search, collide selection. Powered by AngularJS",
   "main": "index.js",
   "homepage": "https://github.com/kjvelarde",
