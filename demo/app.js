@@ -9,7 +9,7 @@ app.controller('KJVelardeDemoCtrl', function ($scope) {
 
    var data1 = [];
 
-        for (var i = 0; i < 7; i++) {
+        for (var i = 0; i < 2; i++) {
             var obj = {
                 id: 'a'+i,
                 name: 'Node ' + i,
