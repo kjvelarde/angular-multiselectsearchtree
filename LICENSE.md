@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2016 Karl James Velarde
+Copyright (c) 2017 Karl James Velarde
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

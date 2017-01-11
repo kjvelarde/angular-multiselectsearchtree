@@ -5,15 +5,15 @@
     <title>KJVelarde Multi-select Search Tree List</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../dist/kjvelarde-multiselect-searchtree-0.9.0.min.css">
+    <link rel="stylesheet" href="../dist/kjvelarde-multiselect-searchtree.min.css">
 
 	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="../dist/kjvelarde-multiselect-searchtree-0.9.0.min.js"></script>
-    <script type="text/javascript" src="../dist/kjvelarde-multiselect-searchtree-0.9.0.tpl.js"></script>
+    <script type="text/javascript" src="../dist/kjvelarde-multiselect-searchtree.min.js"></script>
+    <script type="text/javascript" src="../dist/kjvelarde-multiselect-searchtree.tpl.js"></script>
 </head>
 <body ng-controller="KJVelardeDemoCtrl">
 
@@ -37,7 +37,7 @@
                     </div>
 					                    <multiselect-searchtree data-input-model="data" multi-select="true"
                                             data-output-model="selectedItem2" data-callback="CustomCallback(item, selectedItems)"
-                                            data-select-only-leafs="false" extra-buttons="true"></multiselect-searchtree>
+                                            data-select-only-leafs="false" extra-buttons="true" filter-type="hidden"></multiselect-searchtree>
                 </div>                
             </div>
 			
@@ -48,7 +48,7 @@
                     </div>
 					                    <multiselect-searchtree data-input-model="data" multi-select="true"
                                             data-output-model="selectedItem2" data-callback="CustomCallback(item, selectedItems)"
-                                            data-select-only-leafs="true"></multiselect-searchtree>
+                                            data-select-only-leafs="true" filter-type="disable"></multiselect-searchtree>
                 </div>                
             </div>
 			

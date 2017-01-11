@@ -1,6 +1,6 @@
 {
   "name": "kjvelarde-angular-multiselectsearchtree",
-  "version": "0.8.0",
+  "version": "1.0",
   "description": "Amazing tree list component; bind ready with ability to search. Powered by AngularJS",
   "main": "index.js",
   "repository": {

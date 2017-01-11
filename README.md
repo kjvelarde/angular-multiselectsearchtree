@@ -12,7 +12,7 @@ Very Easy to Use:
 - Plug and Play component
 - Tree List
 - Databind
-- Filter by search textbox
+- Filter/NoFilter by search textbox
 - Checkbox
 - Select one only or Multiselect
 - NO JQuery
