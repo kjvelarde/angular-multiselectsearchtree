@@ -35,9 +35,9 @@ bower install kjvelarde-angular-multiselectsearchtree --save
 Make sure to load the scripts in your html.
 
 ```html
-<link rel="stylesheet" href="../dist/kjvelarde-multiselect-searchtree-0.8.0.min.css">
-<script type="text/javascript" src="../dist/angular-multi-select-tree-0.1.0.js"></script>
-<script type="text/javascript" src="../dist/angular-multi-select-tree-0.1.0.tpl.js"></script>
+<link rel="stylesheet" href="../dist/kjvelarde-multiselect-searchtree.min.css">
+<script type="text/javascript" src="../dist/angular-multi-select-tree.min.js"></script>
+<script type="text/javascript" src="../dist/angular-multi-select-tree.tpl.js"></script>
 
 ```
 
