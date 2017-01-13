@@ -40,17 +40,17 @@ angular.module('multiselect-searchtree').run(['$templateCache', function ($templ
       "         ng-click=\"clickSelectItem(item, $event)\" ng-mouseover=\"onMouseOver(item, $event)\">\n" +
       "        <span ng-if=\"showExpand(item)\" class=\"expand\" ng-class=\"{'expand-opened': item.isExpanded}\"\n" +
       "              ng-click=\"onExpandClicked(item, $event)\"></span>\n" +
+      "        <span ng-if=\"!showExpand(item)\"   style=\"width:12px; display:inline-block; \" ></span>\n" +
       "\n" +
-      "        <div class=\"item-details\"><input class=\"tree-checkbox\" type=\"checkbox\" ng-if=\"showCheckbox()\"\n" +
+      "        <div class=\"item-details\" ng-class=\"{grayText: item.textColor === 'gray', blackText: item.textColor === 'black'}\"><input class=\"tree-checkbox\" type=\"checkbox\" ng-if=\"showCheckbox()\"\n" +
       "                                         ng-checked=\"item.selected\"/>{{item.name}}\n" +
       "        </div>\n" +
       "    </div>\n" +
       "    <ul ng-repeat=\"child in item.children\" ng-if=\"item.isExpanded\">\n" +
-      "        <tree-item item=\"child\" item-selected=\"subItemSelected(item)\" ng-show=\"!child.isFiltered\" use-callback=\"useCallback\"\n" +
+      "        <tree-item item=\"child\" ng-class=\"{grayText: item.textColor === 'gray', blackText: item.textColor === 'black'}\" item-selected=\"subItemSelected(item)\" ng-show=\"!child.isFiltered\" use-callback=\"useCallback\"\n" +
       "                   can-select-item=\"canSelectItem\" multi-select=\"multiSelect\"\n" +
       "                   on-active-item=\"activeSubItem(item, $event)\"></tree-item>\n" +
       "    </ul>\n" +
       "</li>\n"
     );
-
 }]);
