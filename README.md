@@ -2,7 +2,7 @@ angular-multi-select-tree
 =============================
 
 A native Angular multi select tree. No JQuery.
-
+![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)
 #### Demo Page:
 
 [Demo] (http://htmlpreview.github.io/?https://github.com/kjvelarde/angular-multiselectsearchtree/blob/master/demo/index.html)
