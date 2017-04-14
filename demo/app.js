@@ -19,7 +19,7 @@ app.controller('KJVelardeDemoCtrl', function ($scope) {
             for (var j = 0; j < 3; j++) {
                 var obj2 = {
                     id: i+'b'+j,
-                    name: 'Node ' + i + '.' + j,
+                    name: 'Nóde ' + i + '.' + j,
                     children: [],
                     selected: true
                 };
@@ -32,6 +32,12 @@ app.controller('KJVelardeDemoCtrl', function ($scope) {
         data1[1].children[0].children.push({
             id: 'c'+j,
             name: 'Node sub_sub 1',
+            children: [],
+            selected: true
+        },
+		{
+            id: 'c'+j,
+            name: 'brújula',
             children: [],
             selected: true
         });

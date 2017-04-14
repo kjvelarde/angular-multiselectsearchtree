@@ -1,7 +1,7 @@
 /*
  The MIT License (MIT)
 
- Copyright (c) 2016 Karl James Velarde
+ Copyright (c) 2017 Karl James Velarde
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -307,6 +307,17 @@
             scope.refreshOutputModel();
           }
         });
+		
+				
+		  function removeAccents(value) {
+        return value
+            .replace(/á/g, 'a')            
+            .replace(/é/g, 'e')
+            .replace(/í/g, 'i')
+            .replace(/ó/g, 'o')
+            .replace(/ú/g, 'u');
+    }
+
         /**
            * Checks whether any of children match the keyword.
            *
@@ -317,7 +328,7 @@
         function isChildrenFiltered(item, keyword) {
           var childNodes = getAllChildNodesFromNode(item, []);
           for (var i = 0, len = childNodes.length; i < len; i++) {
-            if (childNodes[i].name.toLowerCase().indexOf(keyword.toLowerCase()) !== -1) {
+            if (removeAccents(childNodes[i].name.toLowerCase()).indexOf(removeAccents(keyword.toLowerCase())) !== -1) {
               return false;
             }
           }
@@ -342,7 +353,7 @@
 		}
 		
 		function directSearchFilter(item, parent){
-				 if (item.name.toLowerCase().indexOf(scope.filterKeyword.toLowerCase()) !== -1) {					 		
+				 if (removeAccents(item.name.toLowerCase()).indexOf(removeAccents(scope.filterKeyword.toLowerCase())) !== -1) {					 		
 					hasParent(item);					
               } else {
                   item.isFiltered = true;                  
@@ -357,7 +368,7 @@
 		}
 		
 		function indirectSearchFilter(item){
-			if (item.name.toLowerCase().indexOf(scope.filterKeyword.toLowerCase()) !== -1) {
+			if (removeAccents(item.name.toLowerCase()).indexOf(removeAccents(scope.filterKeyword.toLowerCase())) !== -1) {
                 item.isFiltered = false;
               } else if (!isChildrenFiltered(item, scope.filterKeyword)) {
                 item.isFiltered = false;

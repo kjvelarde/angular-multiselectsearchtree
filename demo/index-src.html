@@ -5,15 +5,15 @@
     <title>KJVelarde Multi-select Search Tree List</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../dist/kjvelarde-multiselect-searchtree.min.css">
+    <link rel="stylesheet" href="../src/kjvelarde-multiselect-searchtree.css">
 
 	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="../dist/kjvelarde-multiselect-searchtree.min.js"></script>
-    <script type="text/javascript" src="../dist/kjvelarde-multiselect-searchtree.tpl.js"></script>
+    <script type="text/javascript" src="../src/kjvelarde-multiselect-searchtree.js"></script>
+    <script type="text/javascript" src="../src/kjvelarde-multiselect-searchtree.tpl.js"></script>
 </head>
 <body ng-controller="KJVelardeDemoCtrl">
 
@@ -37,7 +37,7 @@
                     </div>
 					                    <multiselect-searchtree data-input-model="data" multi-select="true"
                                             data-output-model="selectedItem2" data-callback="CustomCallback(item, selectedItems)"
-                                            data-select-only-leafs="false" extra-buttons="true" filter-type="hidden"></multiselect-searchtree>
+                                            data-select-only-leafs="false" extra-buttons="true"></multiselect-searchtree>
                 </div>                
             </div>
 			
@@ -52,7 +52,7 @@
                 </div>                
             </div>
 			
-					 <div class="col-lg-4">
+			 <div class="col-lg-4">
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <i class="glyphicon glyphicon-th-list"></i> Account Manager - [direct-search = true] <a href="#" data-toggle="modal" data-target="#AccountManagerTreeModal"><i class="pull-right glyphicon glyphicon-plus" style="color:black;"></i></a>
@@ -62,7 +62,6 @@
                                             data-select-only-leafs="true" direct-search="true"></multiselect-searchtree>
                 </div>                
             </div>
-
 
 
             <div id="AccountManagerTreeModal" class="modal fade" role="dialog" v>
